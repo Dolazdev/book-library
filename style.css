@@ -1,0 +1,150 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header h1{
+    display: flex;
+    justify-content: center;
+    margin: 12px auto;
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* Form styles */
+#new-book-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
+}
+
+#new-book-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
+    
+}
+
+
+
+.library-input {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.library-input div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.library-input div > #read-check {
+   
+    gap: 5px;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #34495e;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #3498db;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+.library-input p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #34495e;
+    margin-top: 10px;
+}
+
+button[type="submit"] {
+    background: #3498db;
+    color: #fff;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background: #2980b9;
+}
+
+/* Library display styles */
+.library-display {
+    flex: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+    min-width: 300px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bookCard{
+    height: 250px;
+    background-color: cornflowerblue;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    gap: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.remove-button{
+    padding: 5px;
+    background-color: blanchedalmond;
+    border: none;
+    border-radius: 2px;
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<body>
+    <header>
+        <h1 class="library-title">Your Local Library</h1>
+    </header>
+    <div class="container">
+    
+        <form action="" id="new-book-form">
+            <h2>Add New Book</h2>
+            <div class="library-input">
+                <div>
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" required name="title" placeholder="Title...">
+                </div>
+                <div>
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" required
+                     name="author" placeholder="Author...">
+                </div>
+                <div>
+                    <label for="pages">Pages:</label>
+                    <input type="number" id="pages" required name="pages" placeholder="123..">
+                </div>
+
+                    <div>
+                        <p>Been read?</p>
+                    </div>
+
+                    <section id="read-check">
+                        <label for="yesRead">Yes!</label>
+                        <input type="radio" id="yesRead" name="been_read" value="Read">
+                    </section>
+                    <section id="read-check">
+                        <label for="notRead">Not yet...</label>
+                        <input type="radio" id="notRead" name="been_read" value="Not Read">
+                    </section>
+
+                <div>
+                    <button id="submit-book" type="submit">Add Book</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="library-display" id="library-display"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
